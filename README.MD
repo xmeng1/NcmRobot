@@ -5,6 +5,27 @@ This python project is design for convert the ncm file to the mp3 file automatic
 [anonymous5l/ncmdump](https://github.com/anonymous5l/ncmdump)
 [ncmdump.go](https://github.com/yoki123/ncmdump/)
 
+## How to use?
+
+1. clone the project
+2. install dependency pyYaml
+3. run the `ncmrobot.py`
+
+The script will create the `user_config.yml` in the root folder, if you folder `网易云音乐` is default like:  `/Users/YOUR_USER_NAME/Music/网易云音乐`. You do not need to edit this config file.
+
+In first time, it will convert all `ncm` in the folder and save the late timestamp, so next time it will only convert the music which is saved later than the saved timestamp.
+
+If you have converted the previous ncm files, you can create the `user_config.yml` manually:
+
+File Name： `user_config.yml`
+
+```yaml
+folder: /Users/YOUR_USER_NAME/Music/网易云音乐
+last_timestamp: check your last ncm have been converted and convert it to nuix timestamp
+```
+
+https://www.epochconverter.com/
+
 
 ## How it works?
 
