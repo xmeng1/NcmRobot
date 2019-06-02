@@ -1,3 +1,4 @@
+#coding=utf-8
 import yaml
 from stat import S_ISREG, ST_CTIME, ST_MODE
 import os, sys, time

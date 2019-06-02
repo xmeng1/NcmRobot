@@ -8,7 +8,7 @@ This python project is design for convert the ncm file to the mp3 file automatic
 ## How to use?
 
 1. clone the project
-2. install dependency pyYaml
+2. install dependency pyYaml `pip install pyyaml`
 3. run the `ncmrobot.py`
 
 The script will create the `user_config.yml` in the root folder, if you folder `网易云音乐` is default like:  `/Users/YOUR_USER_NAME/Music/网易云音乐`. You do not need to edit this config file.
