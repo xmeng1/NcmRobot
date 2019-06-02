@@ -14,7 +14,7 @@ We download ncm everyday, and if we use these tools directly, we need to convert
 
 User only need one line command and convert all new downloaded ncm music.
 
-1. Setup the NetEase Music Folder such as the default: `/Users/mengxin/Music/网易云音乐`
+1. Setup the NetEase Music Folder such as the default: `/Users/YOUR_USER_NAME/Music/网易云音乐`
 2. Initial list all the ncm file in the folder and start to convert the files to mp3 automatically.
 3. Remember the latest music time stamp.
 4. Next time run the command, check the last `latest music time stamp` and only convert the file newer than the timestamp. If cannot find it, just convert all ncm files. Then Update the lasted time stamp.

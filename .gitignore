@@ -194,3 +194,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+user_config.yml
