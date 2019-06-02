@@ -41,17 +41,20 @@ entries = ((stat[ST_CTIME], path)
 # NOTE: use `ST_MTIME` to sort by a modification date
 lastTS = config[CONFIG_KEY_LAST_TS]
 newLastTS = lastTS
+sumHandle = 0
 for cdate, path in sorted(entries):
     # print(cdate)
     # print(time.ctime(cdate), os.path.basename(path), os.name)
     if cdate > lastTS:
         fileToConvert = ntpath.basename(path)
         print("### Start to convert the file: ", cdate, "-", fileToConvert)
-        subprocess.run(["./ncmdump", fileToConvert])
+        subprocess.run(["./ncmdump", path])
+        sumHandle = sumHandle + 1
     if cdate > newLastTS:
         newLastTS = cdate
 
-print(newLastTS)
+print("new last time stamp: ", newLastTS, "time: ", time.ctime(newLastTS))
+print("sum of handle this time: ", sumHandle)
 
 config[CONFIG_KEY_LAST_TS] = newLastTS
 with open(configFilePath, 'w', encoding='utf-8') as outfile:
